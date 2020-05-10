@@ -5,6 +5,10 @@ const geocode = require('./utils/geocode');
 const weatherCode = require('./utils/forecasts');
 
 const app = express();            
+const port = process.env.PORT || 2000;
+
+
+
 
 console.log('This is tuto about git repository');
 //Define paths for Express config
@@ -126,6 +130,6 @@ app.get('*', (req, res) => {
     });
 });
 
-app.listen(2000, () => {
-    console.log('Server start to run on port 2000');
-})
+app.listen(port, () => {
+    console.log('Server start to run on port'+ port);
+});
