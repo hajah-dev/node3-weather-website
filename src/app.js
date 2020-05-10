@@ -6,6 +6,7 @@ const weatherCode = require('./utils/forecasts');
 
 const app = express();            
 
+console.log('This is tuto about git repository');
 //Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, '../public');
 const viewsPath = path.join(__dirname, '../templates/views');
