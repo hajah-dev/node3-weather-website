@@ -74,7 +74,8 @@ const weatherCode = (lat, long, callback) => {
             callback('Unable to find location', undefined);
         }
         else{
-            callback(undefined, `It is currently ${body.current.temperature} far out. It feels like ${body.current.feelslike} far`);
+            callback(undefined, `It is currently ${body.current.temperature} *c out. It feels like ${body.current.feelslike} *c
+                     The humidity ${body.current.humidity} is higher than normaly, and the climat is ${body.current.weather_descriptions[0]}`);
         }
     })
 };
